@@ -1,11 +1,12 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'sinatra/base'
+require 'sinatra'
 require File.join(File.dirname(__FILE__), 'environment')
 
-require 'haml'
 
 class MainApp < Sinatra::Base
+
   configure do
 	  set :views, "#{File.dirname(__FILE__)}/views"
 	end
